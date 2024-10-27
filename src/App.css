@@ -36,3 +36,65 @@
     transform: rotate(360deg);
   }
 }
+
+.content {
+  max-width: 800px;
+  text-align: left;
+  padding: 0 20px;
+}
+
+.main-points {
+  list-style-type: none;
+  padding: 0;
+}
+
+.main-points > li {
+  margin-bottom: 20px;
+}
+
+.sub-points {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+
+.main-points p, .sub-points li {
+  margin-top: 5px;
+}
+
+.main-points > li > strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.App-header h1 {
+  margin-bottom: 20px;
+}
+
+.content h2 {
+  margin-top: 20px;
+  margin-bottom: 15px;
+}
+
+.content > p {
+  margin-bottom: 20px;
+}
+
+.technique-button, .back-button, .info-button {
+  background-color: #61dafb;
+  color: #282c34;
+  padding: 10px 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.back-button {
+  margin-bottom: 20px;
+}
+
+.info-button {
+  margin-right: 10px;
+}

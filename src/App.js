@@ -1,22 +1,31 @@
-import logo from './logo.svg';
+import React, { useState } from 'react';
 import './App.css';
+import WeightLiftingTechniques from './WeightLiftingTechniques';
+import WhatIsSpotting from './WhatIsSpotting';
 
 function App() {
+  const [currentPage, setCurrentPage] = useState('home');
+
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Welcome to the Universal Spotters' Program!</h1>
+        {currentPage === 'home' && (
+          <>
+            <button onClick={() => setCurrentPage('whatIsSpotting')} className="info-button">
+              Spotting in Weight Lifting: What and When
+            </button>
+            <button onClick={() => setCurrentPage('techniques')} className="technique-button">
+              Weight Lifting Spotting Techniques
+            </button>
+          </>
+        )}
+        {currentPage === 'whatIsSpotting' && (
+          <WhatIsSpotting onBack={() => setCurrentPage('home')} />
+        )}
+        {currentPage === 'techniques' && (
+          <WeightLiftingTechniques onBack={() => setCurrentPage('home')} />
+        )}
       </header>
     </div>
   );
