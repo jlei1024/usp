@@ -79,7 +79,7 @@
   margin-bottom: 20px;
 }
 
-.technique-button, .back-button, .info-button {
+.technique-button, .back-button, .info-button, .video-button {
   background-color: #61dafb;
   color: #282c34;
   padding: 10px 20px;
@@ -97,4 +97,38 @@
 
 .info-button {
   margin-right: 10px;
+}
+
+.video-section {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-top: 20px;
+}
+
+.video-section h3 {
+  color: #61dafb;
+  margin-bottom: 10px;
+}
+
+.video-container {
+  margin: 0 auto;
+  max-width: 560px;
+  width: 100%;
+}
+
+.video-container iframe {
+  width: 100%;
+  border: 2px solid #61dafb;
+  border-radius: 8px;
+}
+
+@media (max-width: 600px) {
+  .video-container {
+    width: 100%;
+  }
+  
+  .video-container iframe {
+    height: 240px;
+  }
 }

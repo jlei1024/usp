@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import './App.css';
 import WeightLiftingTechniques from './WeightLiftingTechniques';
 import WhatIsSpotting from './WhatIsSpotting';
+import Videos from './Videos';
 
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
@@ -18,6 +19,9 @@ function App() {
             <button onClick={() => setCurrentPage('techniques')} className="technique-button">
               Weight Lifting Spotting Techniques
             </button>
+            <button onClick={() => setCurrentPage('videos')} className="video-button">
+              Videos
+            </button>
           </>
         )}
         {currentPage === 'whatIsSpotting' && (
@@ -25,6 +29,9 @@ function App() {
         )}
         {currentPage === 'techniques' && (
           <WeightLiftingTechniques onBack={() => setCurrentPage('home')} />
+        )}
+        {currentPage === 'videos' && (
+          <Videos onBack={() => setCurrentPage('home')} />
         )}
       </header>
     </div>
