@@ -7,6 +7,11 @@ import Videos from './Videos';
 function App() {
   const [currentPage, setCurrentPage] = useState('home');
 
+  const handleVideoClick = () => {
+    window.scrollTo(0, 0);
+    setCurrentPage('videos');
+  };
+
   return (
     <div className="App">
       <header className="App-header">
@@ -28,7 +33,10 @@ function App() {
           <WhatIsSpotting onBack={() => setCurrentPage('home')} />
         )}
         {currentPage === 'techniques' && (
-          <WeightLiftingTechniques onBack={() => setCurrentPage('home')} />
+          <WeightLiftingTechniques 
+            onBack={() => setCurrentPage('home')} 
+            onVideoClick={handleVideoClick}
+          />
         )}
         {currentPage === 'videos' && (
           <Videos onBack={() => setCurrentPage('home')} />

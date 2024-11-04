@@ -21,6 +21,19 @@ function Videos({ onBack }) {
           </iframe>
         </div>
 
+        <div className="video-container">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/90dLXydiPtc?si=P65VqRhMX26J_REN" 
+            title="Additional Spotting Guidelines" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin" 
+            allowFullScreen>
+          </iframe>
+        </div>
+
         <h3>Bench Press Spotting</h3>
         <div className="video-container">
           <iframe 
@@ -56,6 +69,20 @@ function Videos({ onBack }) {
             height="315" 
             src="https://www.youtube.com/embed/wziFr4_MR_Q?si=Gbn3MhtsbLmpnvzi" 
             title="Dumbbell Shoulder Press Spotting" 
+            frameBorder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            referrerPolicy="strict-origin-when-cross-origin" 
+            allowFullScreen>
+          </iframe>
+        </div>
+
+        <h3>Deadlift Spotting Techniques</h3>
+        <div className="video-container">
+          <iframe 
+            width="560" 
+            height="315" 
+            src="https://www.youtube.com/embed/ZMFx0h2NZGQ?si=okGK742fOu0GiwOR" 
+            title="Deadlift Spotting Techniques" 
             frameBorder="0" 
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
             referrerPolicy="strict-origin-when-cross-origin" 
